@@ -1,6 +1,6 @@
 # Selamat Datang di PT Herro Dynamics Indonesia
 
-![Logo Herro Dynamics](link_ke_gambar_logo)
+![Logo Herro Dynamics][def]
 
 Kami adalah dealer resmi untuk forklift merek Hangcha di Indonesia. Kami bangga menyediakan solusi forklift terbaik untuk berbagai industri, termasuk industri gudang, logistik, konstruksi, dan banyak lagi.
 
@@ -26,11 +26,15 @@ Kami juga menyediakan layanan perawatan dan perbaikan forklift untuk memastikan 
 
 Kami berkomitmen untuk memberikan solusi forklift terbaik untuk bisnis Anda. Jangan ragu untuk menghubungi kami untuk pertanyaan, permintaan penawaran, atau informasi lebih lanjut.
 
-**Alamat:** [Alamat Anda di Sini]
-**Telepon:** [Nomor Telepon Anda]
-**Email:** [Email Anda]
-**Website:** [Website Anda]
+**Alamat:** [Town House Cordoba 59 Kamal Penjaringan Jakarta Utara]
+**Telepon:** [02122574351]
+**Email:** [cs@herro.co.id]
+**Website:** [www.herro.co.id]
 
 Terima kasih telah memilih PT Herro Dynamics Indonesia sebagai mitra forklift Anda. Kami siap membantu Anda mencapai kesuksesan bisnis Anda dengan solusi forklift berkualitas tinggi.
 
-![Gambar Forklift Hangcha](link_ke_gambar_forklift)
+![Gambar Forklift Hangcha][def2]
+
+
+[def]: assets/img/hero-img.png
+[def2]: assets/img/forklift_decor_readme.png
