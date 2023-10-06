@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: #717ff5;
+  color: #f6a117;
   text-decoration: none;
 }
 
@@ -44,7 +44,7 @@ section {
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
+  color: #012970;
   text-transform: uppercase;
 }
 
@@ -54,7 +54,7 @@ section {
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #182e60;
+  color: #012970;
 }
 
 @media (max-width: 768px) {
@@ -69,7 +69,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
+  background: #f6a117;
   min-height: 40px;
   margin-top: 82px;
   color: #fff;
@@ -125,7 +125,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: #f6a117;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -139,7 +139,7 @@ section {
 }
 
 .back-to-top:hover {
-  background: #6776f4;
+  background: #012970;
   color: #fff;
 }
 
@@ -289,7 +289,7 @@ section {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #4154f1;
+  color: #f6a117;
 }
 
 .navbar .dropdown:hover>ul {
@@ -321,7 +321,7 @@ section {
 .navbar .megamenu ul li a:hover,
 .navbar .megamenu ul li .active,
 .navbar .megamenu ul li .active:hover {
-  color: #4154f1;
+  color: #012970;
 }
 
 .navbar .dropdown .dropdown ul {
@@ -351,7 +351,7 @@ section {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #012970;
+  color: #f6a117;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -414,7 +414,7 @@ section {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #4154f1;
+  color: #f6a117;
 }
 
 .navbar-mobile .getstarted,
@@ -449,7 +449,7 @@ section {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #4154f1;
+  color: #f6a117;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -486,7 +486,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
+  background: #f6a117;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
@@ -565,7 +565,7 @@ section {
 .about h3 {
   font-size: 14px;
   font-weight: 700;
-  color: #4154f1;
+  color: #0c5de7;
   text-transform: uppercase;
 }
 
@@ -586,8 +586,8 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
-  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+  background: #f6a117;
+  box-shadow: 0px 5px 25px rgba(241, 150, 3, 0.3);
 }
 
 .about .btn-read-more span {
