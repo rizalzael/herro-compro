@@ -36,5 +36,5 @@ Terima kasih telah memilih PT Herro Dynamics Indonesia sebagai mitra forklift An
 ![Gambar Forklift Hangcha][def2]
 
 
-[def]: assets/img/hero-img.png
+[def]: assets/img/Herro Logo.png
 [def2]: assets/img/forklift_decor_readme.png
