@@ -1,41 +1,42 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+if(isset($_POST['email'])) {
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+    // Ganti email penerima dengan email yang sesuai
+    $email_to = "cs@herro.co.id";
+    $email_subject = "Formulir Kontak Website";
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+    function died($error) {
+        echo "Maaf, tetapi terdapat kesalahan dalam formulir yang Anda kirim.";
+        die();
+    }
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+    // validasi data
+    if(!isset($_POST['name']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['subject']) ||
+        !isset($_POST['message'])) {
+        died('Maaf, terdapat masalah dengan formulir yang Anda kirim.');       
+    }
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+    $name = $_POST['name']; // diambil dari formulir
+    $email_from = $_POST['email']; // diambil dari formulir
+    $subject = $_POST['subject']; // diambil dari formulir
+    $message = $_POST['message']; // diambil dari formulir
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+    $email_message = "Detail formulir kontak:\n\n";
+    $email_message .= "Nama: ".$name."\n";
+    $email_message .= "Email: ".$email_from."\n";
+    $email_message .= "Subject: ".$subject."\n";
+    $email_message .= "Pesan: ".$message."\n";
 
-  echo $contact->send();
+    // create email headers
+    $headers = 'From: '.$email_from."\r\n".
+    'Reply-To: '.$email_from."\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+    @mail($email_to, $email_subject, $email_message, $headers);  
+?>
+<!-- include your own success html here -->
+Terima kasih telah menghubungi kami. Kami akan segera menghubungi Anda kembali.
+<?php
+}
 ?>
