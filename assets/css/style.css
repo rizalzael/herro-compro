@@ -161,7 +161,8 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  transition: all 0.5s;
+  background-color: #fff;
+  transition: all 0.3s;
   z-index: 997;
   padding: 20px 0;
 }
@@ -728,6 +729,8 @@ section {
 
 .features .feature-icons {
   margin-top: 120px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .features .feature-icons h3 {
@@ -1105,6 +1108,20 @@ section {
 .recent-blog-posts .post-box:hover .post-img img {
   transform: rotate(6deg) scale(1.2);
 }
+
+.peta .header h3 {
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #f6a117;
+  text-align: center;
+}
+
+.peta .info-box {
+  background: #fafbff;
+  padding: 30px;
+}
+
 
 /*--------------------------------------------------------------
 # Contact
