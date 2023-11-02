@@ -538,6 +538,7 @@ section {
 @media (max-width: 768px) {
   .hero {
     text-align: center;
+    background: url(../img/hero-bg.png) center left no-repeat;
   }
 
   .hero h1 {
@@ -1118,7 +1119,6 @@ section {
 }
 
 .peta .info-box {
-  background: #fafbff;
   padding: 30px;
 }
 
