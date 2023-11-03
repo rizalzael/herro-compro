@@ -9,3 +9,5 @@ deployment:
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R forms $DEPLOYPATH
     - /bin/cp -R produk $DEPLOYPATH
+    - /bin/co -R blog $DEPLOYPATH
+    
