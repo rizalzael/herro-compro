@@ -14,4 +14,3 @@ deployment:
     - /bin/cp -R forms $DEPLOYPATH
     - /bin/cp -R produk $DEPLOYPATH
     - /bin/co -R blog $DEPLOYPATH
-    
