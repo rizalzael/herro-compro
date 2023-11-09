@@ -980,6 +980,131 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Detail
+--------------------------------------------------------------*/
+.detail-container .detail-item{
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 40px 30px;
+  box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.detail-container .detail-item p {
+  font-style: italic;
+}
+
+
+.detail .swiper-slide img {
+  width: 100%;
+}
+
+.detail .swiper-pagination {
+  margin-top: 10px;
+  position: relative;
+}
+
+.detail .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #f6a117;
+}
+
+.detail .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #f6a117;
+}
+
+/*--------------------------------------------------------------
+# Fitur2
+--------------------------------------------------------------*/
+.fitur2 .accordion-collapse {
+  border: 0;
+}
+
+.fitur2 .accordion-button {
+  padding: 15px 15px 20px 0;
+  font-weight: 600;
+  border: 0;
+  font-size: 18px;
+  color: #444444;
+  text-align: left;
+}
+
+.fitur2 .accordion-button:focus {
+  box-shadow: none;
+}
+
+.fitur2 .accordion-button:not(.collapsed) {
+  background: none;
+  color: #f6a117;
+  border-bottom: 0;
+}
+
+.fitur2 .accordion-body {
+  padding: 0 0 25px 0;
+  border: 0;
+}
+
+/*-----------tombol-----------
+--------------------------*/
+
+.brosur-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-katalog {
+  background-color: #012970;
+}
+
+.btn-brosur {
+  background-color: #012970;
+}
+
+.btn:hover {
+  background-color: #f6a117;
+  color: #fff;
+}
+
+
+
+/*--------------------------banner-----------------------
+------------------------*/
+.gambar img {
+  width: 100%;
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+  .gambar img {
+    
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
@@ -988,23 +1113,6 @@ section {
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #f6a117;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #f6a117;
 }
 
 .portfolio-details .portfolio-info {
@@ -2624,15 +2732,6 @@ section {
   padding-top: 30px;
   color: #012970;
 }
-
-
-
-
-
-
-
-
-
 
 .footer .credits {
   padding-top: 10px;

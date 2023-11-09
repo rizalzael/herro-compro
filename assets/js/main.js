@@ -156,13 +156,8 @@
   });
 
 
-
-
-  /**
-   * Clients Slider
-   */
-  new Swiper('.clients-slider', {
-    speed: 400,
+  const swiper = new Swiper('.detail-container', {
+    speed: 900,
     loop: true,
     autoplay: {
       delay: 5000,
@@ -176,23 +171,39 @@
     },
     breakpoints: {
       320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      768: {
         slidesPerView: 2,
-        spaceBetween: 40
+        spaceBetween: 10
       },
-      480: {
+      1200: {
         slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
       }
     }
   });
+
+  // Ambil semua elemen .detail-item
+const detailItems = document.querySelectorAll('.detail-item');
+
+// Inisialisasi variabel untuk menyimpan tinggi maksimum
+let maxHeight = 0;
+
+// Iterasi melalui setiap elemen dan dapatkan tinggi maksimum
+detailItems.forEach(item => {
+    const height = item.clientHeight;
+    if (height > maxHeight) {
+        maxHeight = height;
+    }
+});
+
+// Tetapkan tinggi yang sama untuk setiap elemen .detail-item
+detailItems.forEach(item => {
+    item.style.height = `${maxHeight}px`;
+});
+
+  
 
   /**
    * Porfolio isotope and filter
