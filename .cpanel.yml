@@ -4,8 +4,12 @@ deployment:
     - export DEPLOYPATH=/home/u1489008/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp blog.html $DEPLOYPATH
-    - /bin/cp blog-single.html $DEPLOYPATH
     - /bin/cp tentangHDI.html $DEPLOYPATH
+    - /bin/cp termsofservise.html $DEPLOYPATH
+    - /bin/cp saleslocator.html $DEPLOYPATH
+    - /bin/cp getquote.html $DEPLOYPATH
+    - /bin/cp privacyofpolicy.html $DEPLOYPATH
+    - /bin/cp tentangHC.html $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R forms $DEPLOYPATH
     - /bin/cp -R produk $DEPLOYPATH
