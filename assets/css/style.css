@@ -1050,6 +1050,21 @@ section {
   border: 0;
 }
 
+/*------video---------------
+----*/
+
+.videoproduk .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.videoproduk iframe {
+  max-width: 100%;
+}
+
 /*-----------tombol-----------
 --------------------------*/
 
