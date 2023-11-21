@@ -1,7 +1,0 @@
-RewriteEngine On
-
-# Atur halaman utama
-RewriteRule ^$ index.html [L]
-
-# Atur halaman error
-ErrorDocument 404 /errors/404.html
