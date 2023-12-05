@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store Locator</title>
+  <style>
+    /* Style agar peta memiliki ukuran yang sesuai */
+    #map {
+      height: 720px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Store Locator</h1>
+  
+  <!-- Elemen div yang akan menampung peta -->
+  <div id="map"></div>
+
+  <!-- Script untuk menghubungkan dengan Google Maps API -->
+  <script>
+    function initMap() {
+      // Lokasi koordinat pusat peta
+      var center = { lat: -6.2088, lng: 106.8456 }; // Ganti dengan koordinat yang diinginkan
+      
+      // Buat peta
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10, // Ganti sesuai kebutuhan
+        center: center
+      });
+
+      // Tambahkan marker untuk setiap toko dengan koordinatnya
+      var locations = [
+        {lat: -6.2345, lng: 106.8236, name: 'Toko 1'}, // Ganti dengan koordinat dan nama toko yang diinginkan
+        {lat: -6.2568, lng: 106.8402, name: 'Toko 2'}, // Ganti dengan koordinat dan nama toko yang diinginkan
+        // ...Tambahkan lebih banyak lokasi jika diperlukan
+      ];
+
+      locations.forEach(function(location) {
+        var marker = new google.maps.Marker({
+          position: {lat: location.lat, lng: location.lng},
+          map: map,
+          title: location.name
+        });
+      });
+    }
+  </script>
+  
+  <!-- Hubungkan dengan Google Maps API -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  <!-- Ganti YOUR_API_KEY dengan kunci API Google Maps Anda -->
+</body>
+</html>
