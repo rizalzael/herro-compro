@@ -108,35 +108,46 @@
       <script>
         function initMap() {
           const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
+            zoom: 10,
             center: { lat: -6.110295767987939, lng: 106.74221445793647 },
           });
 
           const locations = [
+          {
+              title: "Sales Jakarta",
+              position: { lat: -6.110295767987939, lng: 106.74221445793647 },
+              whatsapp: "+62 812-8223-1882",
+              description: "Sutisna",
+            },
             {
               title: "Sales Banten",
               position: { lat: -6.343479, lng: 106.211584 },
-              description: "Sutisna WhatsApp +62 812-8223-1882",
+              whatsapp: "+62 812-8223-1882",
+              description: "Sutisna",
             },
             {
               title: "Sales Jawa Tengah",
               position: { lat: -6.966049513788165, lng: 110.3993194464073 }, 
-              description: "Andriansyah WhatsApp +62 857-1432-1211",
+              whatsapp: "+62 857-1432-1211",
+              description: "Andriansyah",
             },
             {
               title: "Sales Surabaya",
               position: { lat: -7.290625663221508, lng: 112.7968917159448 },
-              description: "Ali Harahap WhatsApp +62 812-9379-1585",
+              whatsapp: "+62 812-9379-1585",
+              description: "Ali Harahap",
             },
             {
               title: "Sales Palembang",
               position: { lat: -2.942920888941181, lng: 104.76701248992637 },
-              description: "Andriansyah WhatsApp +62 857-1432-1211",
+              whatsapp: "+62 857-1432-1211",
+              description: "Andriansyah",
             },
             {
               title: "Sales Medan",
               position: { lat: 3.651886167908445, lng: 98.69455016593143 },
-              description: "Sutisna WhatsApp +62 812-8223-1882",
+              whatsapp: "+62 812-8223-1882",
+              description: "Sutisna",
             },
           ];
 
@@ -150,8 +161,8 @@
             const infowindow = new google.maps.InfoWindow({
               content: `
                 <h3>${location.title}</h3>
-                <p><strong>Address:</strong> ${location.address}</p>
-                <p><strong>Description:</strong> ${location.description}</p>
+                <p><strong>Address:</strong> ${location.whatsapp}</p>
+                <p><strong>Nama:</strong> ${location.nama}</p>
                 `,
             });
 
