@@ -2574,6 +2574,81 @@ section {
   background: #f6a117;
 }
 
+/*** tentanghc ***/
+
+.tentanghc .pabrikhc img {
+  width: 100%;
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+  .gambar img {
+    
+  }
+}
+
+/**** sejarahhc ****/
+.sejarahhc {
+  color: #000000;
+  text-align: center;
+}
+
+.sejarahhc p {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 38px;
+  font-weight: 700;
+  color: #012970;
+}
+
+.sejarahhc h4 {
+  font-size: 20px;
+}
+
+/*** videohc ***/
+.videohc {
+  background-color: #f7f6f6;
+}
+
+.videohc .content h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f6a117;
+  text-transform: uppercase;
+}
+
+.videohc .content h2 {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 38px;
+  font-weight: 700;
+  color: #012970;
+}
+
+.videohc .content p {
+  color: #000000;
+}
+
+/* banner sejarah  */
+.bannersejarah img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*rangkinghc*/
+.rankinghc {
+  background: url(../img/bannerrank.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 658px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  color: #ffffff;
+}
 
 /*--------------------------------------------------------------
 # Footer
